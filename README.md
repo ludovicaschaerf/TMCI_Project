@@ -1,12 +1,10 @@
 # Thematic Analysis of Album Lyrics
 
 ## Abstract
-A max 150-word description of the project question or idea, goals, dataset used. What story you would like to tell and why? What's the motivation behind your project?
-
 The aim of the project is to evaluate to what extent are a musical artist’s work reflective of their cultural world. More specifically, we intend to conduct topic analyses on the lyrics of well-established artists with considerably large discographies. These artists include Pink Floyd, David Bowie, Black Sabbath, Joy Division, and Metallica. The artists that were picked published music in similar timeframes, so that it is easier to draw a correlation between the results of each discography. Each artist was also selectively chosen because of their distinct background genre blends. Even when Black Sabbath and Metallica are both metal bands, they still differ in their respective subgenres. The relevance and motivation of this project lies comfortably in the disciple of cultural studies; i.e. to see if there is any within-period, cross-genre similarity between artist’s lyrics. If any similarity is found, we will try to link this similarity to historical events belonging to the common knowledge sphere of their respective time periods, to see if there is any relationship between an artist’s lyrics and their socio-cultural environment at the time of release.
 
 ## Research questions
-A list of research questions you would like to address during the project.
+A list of research questions you would like to address during the project:
 - Is there any within-period, cross-genre similarity between artists’ lyrics?
 - To what extent do lyrics from different time periods share similar content?
 - To what extent do lyrics from varying musical genres share similar content?
@@ -14,73 +12,21 @@ A list of research questions you would like to address during the project.
 
 
 ## Dataset
-List the dataset(s) you want to use, and some ideas on how do you expect to get, manage, process and enrich it/them. Show you've read the docs and are familiar with some examples, and you've a clear idea on what to expect. Discuss data size and format if relevant.
-(Billboard Charts)[https://en.wikipedia.org/wiki/Billboard_charts]
-(Millionsongdataset)[http://millionsongdataset.com/]
-(FMA)[https://github.com/mdeff/fma]
+For this project we need data containing the lyrics of at least some of the songs pertaining to each album of each artist in the period into consideration (1970-1980), and metadata on the artist, the name of the song and, hopefully, the date of publication of the song.
+Useful datasets containing song lyrics and some metadata are the following:
 
-We need to get the lyrics of the following albums:
-*Pink Floyd (1960 - 1990)*
-Atom Heart Mother (1970)
-Meddle (1971)
-The Dark Side of the Moon (1973)
-Wish You Were Here (1975)
-Animals (1977)
-The Wall (1979)
-The Final Cut (1983)
-A Momentary Lapse of Reason (1987)
+- https://www.kaggle.com/gyani95/380000-lyrics-from-metrolyrics
+- https://www.kaggle.com/mousehead/songlyrics
 
-*David Bowie (1970 - 2010)*
-The Man Who Sold the World (1970)
-Hunky Dory (1971)
-The Rise and Fall of Ziggy Stardust and the Spiders From Mars (1972)
-Aladdin Sane (1973)
-Pin Ups (1973)
-Diamond Dogs
-Young Americans (1975)
-Station to Station (1976)
-Low (1977)
-"Heroes" (1977)
-Lodger (1979)
-Scary Monsters (And Super Creeps) (1980)
-Let's Dance (1983)
+We have not been able to check whether the artists we want to are in there, but we believe that they most probably are.
 
+The datasets are on average 250000 lines, of which each one contains the text of the whole song. We are concerned that importing these databases in our laptops might be heavy on the memory, at least until we filter out all the songs we do not want to consider. Hopefully, the format of the lyrics is a string with a decently normal encoding.
 
-*Black Sabbath (1970 - 1980)*
-s/t  (1970)
-Paranoid (1970)
-Master of Reality (1971)
-Vol 4 (1972)
-Sabbath Bloody Sabbath (1973)
-Sabotage (1975)
-Technical Ecstasy (1976)
-Never Say Die! (1978)
-Heaven and Hell (1980)
-Mob Rules (1981)
-Born Again (1983)
-Seventh Star (1986)
-The Eternal Idol (1987)
-Headless Cross (1989)
+We will process the lyrics string using the standard Natural Language Processing pipeline.
 
-
-*Joy Division (1970 - 1980)*
-Unknown Pleasures (1979)
-Closer (1980)
-Still (1981)
-
-*Metallica (1980 - 1990)*
-Kill ‘Em All (1983)
-Ride the Lightning (1984)
-Master of Puppets (1986)
-...And Justice for All (1988)
-s/t (1991)
-Load (1996)
-Reload (1997)
-
-But hopefully we would like to find some preprocessed version
-(i.e. tokenized, stemmed, lemmatized, semantic and syntactic analysis)
 
 ## A tentative list of milestones for the project
+
 Add here a sketch of your planning for the coming weeks. Please mention who does what.
 
 *Milestones*
@@ -102,9 +48,19 @@ Week 5:
 ## Documentation
 This can be added as the project unfolds. You should describe, in particular, what your repo contains and how to reproduce your results.
 
-Some info on using text mining for song lyrics:
+## Sources
+A preliminary list of sources we would like to use:
 
+Implementations of topic analysis of lyrics:
+- https://www.kaggle.com/devisangeetha/sing-a-song-lyrics-is-here/
+- https://www.datacamp.com/community/tutorials/R-nlp-machine-learning
+- https://www.kaggle.com/rtatman/nlp-in-r-topic-modelling
 
-http://dataffiti.com/2016/01/17/analyzing-rap-lyrics-part-1-of-3-creating-a-corpus/
-https://towardsdatascience.com/what-songs-tell-us-about-text-mining-with-lyrics-ca80f98b3829
-https://michaeljohns.github.io/lyrics-lab/
+Some nice analyses of lyrics:
+- http://dataffiti.com/2016/01/17/analyzing-rap-lyrics-part-1-of-3-creating-a-corpus/
+- https://michaeljohns.github.io/lyrics-lab/
+- https://towardsdatascience.com/sing-song-with-text-mining-cd8508ab51a5
+
+A nice explanation of topic modeling:
+- https://www.tidytextmining.com/topicmodeling.html
+
