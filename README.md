@@ -23,9 +23,12 @@ A list of research questions you would like to address during the project.
 
 ## Dataset
 List the dataset(s) you want to use, and some ideas on how do you expect to get, manage, process and enrich it/them. Show you've read the docs and are familiar with some examples, and you've a clear idea on what to expect. Discuss data size and format if relevant.
-(Billboard Charts)[https://en.wikipedia.org/wiki/Billboard_charts]
-(Millionsongdataset)[http://millionsongdataset.com/]
-(FMA)[https://github.com/mdeff/fma]
+https://www.kaggle.com/devisangeetha/sing-a-song-lyrics-is-here/
+https://www.datacamp.com/community/tutorials/R-nlp-machine-learning
+https://www.kaggle.com/rtatman/nlp-in-r-topic-modelling
+https://en.wikipedia.org/wiki/Billboard_charts
+http://millionsongdataset.com/
+https://github.com/mdeff/fma
 
 We need to get the lyrics of the following albums:
 *Pink Floyd (1960 - 1990)*
@@ -100,3 +103,5 @@ Some info on using text mining for song lyrics:
 http://dataffiti.com/2016/01/17/analyzing-rap-lyrics-part-1-of-3-creating-a-corpus/
 https://towardsdatascience.com/what-songs-tell-us-about-text-mining-with-lyrics-ca80f98b3829
 https://michaeljohns.github.io/lyrics-lab/
+https://towardsdatascience.com/sing-song-with-text-mining-cd8508ab51a5
+https://www.tidytextmining.com/topicmodeling.html
