@@ -3,32 +3,21 @@
 ## Abstract
 A max 150-word description of the project question or idea, goals, dataset used. What story you would like to tell and why? What's the motivation behind your project?
 
-*Idea 01*
-Idea: extrapolate the themes of each of the top 10 famous albums in the 70’s and 80’s of Pink Floyd, David Bowie, Black Sabbath and Joy Division using their song lyrics. Once that is done, we can consider the top 10 themes per album in time and reflect on whether they:
-Are expressive of a personal event in the lives/careers of the bands
-Are expressive of a socio-political event of the years (if in common between 2 or more bands)
-Are expressive of the music taste of the time
-Are expressive of the musical conventions of the genre
-
-*Idea 02*
-Extrapolate the themes from albums of artists from the lyrics and determine how the albums are representative of a specific point in the artist’s career/life.
-
-If we go with this, we have to ignore time period (eg. Blackstar), but we one artist suffices.
-
+The aim of the project is to evaluate to what extent are a musical artist’s work reflective of their cultural world. More specifically, we intend to conduct topic analyses on the lyrics of well-established artists with considerably large discographies. These artists include Pink Floyd, David Bowie, Black Sabbath, Joy Division, and Metallica. The artists that were picked published music in similar timeframes, so that it is easier to draw a correlation between the results of each discography. Each artist was also selectively chosen because of their distinct background genre blends. Even when Black Sabbath and Metallica are both metal bands, they still differ in their respective subgenres. The relevance and motivation of this project lies comfortably in the disciple of cultural studies; i.e. to see if there is any within-period, cross-genre similarity between artist’s lyrics. If any similarity is found, we will try to link this similarity to historical events belonging to the common knowledge sphere of their respective time periods, to see if there is any relationship between an artist’s lyrics and their socio-cultural environment at the time of release. 
 
 ## Research questions
 A list of research questions you would like to address during the project.
-*1* Do the themes of musical albums reflect more their personal or the socio-political events?
+*1* Is there any within-period, cross-genre similarity between artists’ lyrics?
+*2* To what extent do lyrics from different time periods share similar content?
+*3* To what extent do lyrics from varying musical genres share similar content?
+*4* Is there a relationship between an artist’s lyrics and their socio-cultural environment at the time of release?
 
 
 ## Dataset
 List the dataset(s) you want to use, and some ideas on how do you expect to get, manage, process and enrich it/them. Show you've read the docs and are familiar with some examples, and you've a clear idea on what to expect. Discuss data size and format if relevant.
-https://www.kaggle.com/devisangeetha/sing-a-song-lyrics-is-here/
-https://www.datacamp.com/community/tutorials/R-nlp-machine-learning
-https://www.kaggle.com/rtatman/nlp-in-r-topic-modelling
-https://en.wikipedia.org/wiki/Billboard_charts
-http://millionsongdataset.com/
-https://github.com/mdeff/fma
+(Billboard Charts)[https://en.wikipedia.org/wiki/Billboard_charts]
+(Millionsongdataset)[http://millionsongdataset.com/]
+(FMA)[https://github.com/mdeff/fma]
 
 We need to get the lyrics of the following albums:
 *Pink Floyd (1960 - 1990)*
@@ -103,5 +92,3 @@ Some info on using text mining for song lyrics:
 http://dataffiti.com/2016/01/17/analyzing-rap-lyrics-part-1-of-3-creating-a-corpus/
 https://towardsdatascience.com/what-songs-tell-us-about-text-mining-with-lyrics-ca80f98b3829
 https://michaeljohns.github.io/lyrics-lab/
-https://towardsdatascience.com/sing-song-with-text-mining-cd8508ab51a5
-https://www.tidytextmining.com/topicmodeling.html
