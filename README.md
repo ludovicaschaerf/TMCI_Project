@@ -29,19 +29,19 @@ We will process the lyrics string using the standard Natural Language Processing
 
 Add here a sketch of your planning for the coming weeks. Please mention who does what.
 
-*Milestones*
-Week 1:
+*Milestones*  
+Week 1:  
 1. Translate datasets to a usable format, see if there is enough data on the selected artist, if necessary, decide on new artists - Jaël
 2. Filter selected artists out of datasets, clean data if necessary - Ludovica
-3. Develop natural language processing pipeline (tokenize sentences, lemmatize and normalize) - Jaël
-Week 2:
-4. Clustering & topic modeling (https://www.machinelearningplus.com/nlp/topic-modeling-gensim-python/) - Ludovica
-Week 3:
+3. Develop natural language processing pipeline (tokenize sentences, lemmatize and normalize) - Jaël  
+Week 2:  
+4. Clustering & topic modeling (https://www.machinelearningplus.com/nlp/topic-modeling-gensim-python/) - Ludovica  
+Week 3:  
 5. Visualization of results using Matplotlib - António
-6. Results analysis - Jaël, António, Ludovica
-Week 4:
-7. Documentation - Jaël, António, Ludovica
-Week 5:
+6. Results analysis - Jaël, António, Ludovica  
+Week 4:  
+7. Documentation - Jaël, António, Ludovica  
+Week 5:  
 8. Presentation - Jaël, António, Ludovica
 
 
@@ -63,4 +63,3 @@ Some nice analyses of lyrics:
 
 A nice explanation of topic modeling:
 - https://www.tidytextmining.com/topicmodeling.html
-
