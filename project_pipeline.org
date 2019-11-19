@@ -30,3 +30,29 @@ pipeline and, once we obtain the most common words per each album, author, year
 
 #+RESULTS:
 
+#+BEGIN_SRC python
+  lyrics = []
+
+  with open('./data/lyrics.csv', 'r') as infile:
+      lyrics = pd.read_csv(infile)
+  
+  lyrics.columns
+#+END_SRC
+
+#+RESULTS:
+: Index([u'index', u'song', u'year', u'artist', u'genre', u'lyrics'], dtype='object')
+
+#+BEGIN_SRC python
+  artists = ['joy-division', 'metallica', 'black-sabbath', 'pink-floyd', 'david-bowie']
+
+  david_bowie = lyrics[lyrics[u'artist'] == 'david-bowie']
+  black_sabbath = lyrics[lyrics[u'artist'] == 'black-sabbath']
+  (david_bowie.shape, black_sabbath.shape)
+#+END_SRC
+
+#+RESULTS:
+| 599 | 6 |
+| 210 | 6 |
+
+This dataset only contains songs by David Bowie and Black Sabbath out of the
+artists we want to consider.
