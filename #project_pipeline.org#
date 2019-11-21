@@ -1,0 +1,78 @@
+#+TITLE: TMCI Project
+#+AUTHOR: Ludovica Schaerf Jael Kortekaas Antònio Mendes 
+#+EMAIL:  <ludovica.schaerf@gmail.com> 
+#+DATE: 15 Nov 2019
+#+EXPORT_FILE_NAME: html/pipeline_narrative.org
+#+OPTIONS: ^:
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://gongzhitaao.org/orgcss/org.css"/>
+#+PROPERTY: header-args :exports both :session pipeline_ :cache :tangle yes
+
+* Introduction...
+This file contains the the preprocessing pipeline to our project. 
+As a first step we are importing the data and filtering out all the songs that
+we don't need for our analysis. Secondly, we will implement the 'standard' 
+pipeline and, once we obtain the most common words per each album, author, year
+(...) we will move to another file to do the clustering and topic analysis.
+
+* Import
+
+#+BEGIN_SRC python
+  from pathlib import Path
+  import numpy as np
+  import pandas as pd
+
+  import matplotlib.pyplot as plt
+
+  plot_dir = Path("./figures")
+  data_dir = Path("./data")
+
+#+END_SRC
+
+#+RESULTS:
+
+#+BEGIN_SRC python
+  lyrics = []
+
+  with open('./data/lyrics.csv', 'r') as infile:
+      lyrics = pd.read_csv(infile)
+  
+  lyrics.columns
+#+END_SRC
+
+#+RESULTS:
+
+#+BEGIN_SRC python
+  artists = ['joy-division', 'metallica', 'black-sabbath', 'pink-floyd', 'david-bowie']
+
+  david_bowie = lyrics[lyrics[u'artist'] == 'david-bowie']
+  black_sabbath = lyrics[lyrics[u'artist'] == 'black-sabbath']
+  (david_bowie.shape, black_sabbath.shape)
+#+END_SRC
+
+#+RESULTS:
+
+This dataset only contains songs by David Bowie and Black Sabbath out of the
+artists we want to consider.
+* Processing Pipeline
+#+BEGIN_SRC python
+  import nltk
+  import spacey
+  import re
+#+END_SRC
+
+#+RESULTS:
+
+#+BEGIN_SRC python
+  from nltk.corpus import stopwords
+  stop_words = stopwords.words('english')
+  stop_words.extend(['yeah', 'oh'])
+#+END_SRC
+
+#+RESULTS:
+
+#+BEGIN_SRC python
+  for lyric in lyrics:
+      lyric[5] = 
+#+END_SRC
+
+#+RESULTS:
