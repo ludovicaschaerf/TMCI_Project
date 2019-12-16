@@ -1,5 +1,8 @@
 # Thematic Analysis of Album Lyrics
 
+## Navigating the Repo
+Our main code can be found in the Project Pipeline.ipynb file. In order to run our code, make sure to extract the 380000-lyrics-from-metrolyrics.zip file to obtain the lyrics.csv file, which is used in our code to obtain the data from the dataset. The visualizations folder contains the .png files of our visualizations, but these visualizations can also be seen in the notebook itself. The lda_tuning_results.csv contains all intermediate results of the grid search we used to optimize our parameters. 
+
 ## Abstract
 The aim of the project is to evaluate to what extent are a musical artist’s work reflective of their cultural world. More specifically, we intend to conduct topic analyses on the lyrics of well-established artists with considerably large discographies. These artists include Pink Floyd, David Bowie, Black Sabbath, Joy Division, and Metallica. The artists that were picked published music in similar timeframes, so that it is easier to draw a correlation between the results of each discography. Each artist was also selectively chosen because of their distinct background genre blends. Even when Black Sabbath and Metallica are both metal bands, they still differ in their respective subgenres. The relevance and motivation of this project lies comfortably in the disciple of cultural studies; i.e. to see if there is any within-period, cross-genre similarity between artist’s lyrics. If any similarity is found, we will try to link this similarity to historical events belonging to the common knowledge sphere of their respective time periods, to see if there is any relationship between an artist’s lyrics and their socio-cultural environment at the time of release.
 
